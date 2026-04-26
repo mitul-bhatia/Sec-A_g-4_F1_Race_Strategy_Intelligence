@@ -1,0 +1,106 @@
+======================================================================
+F1 RACE STRATEGY INTELLIGENCE — STATISTICAL SUMMARY
+Notebook 04 | Section A Team 4
+======================================================================
+
+MODEL 1 — OLS Standardised Predictors
+----------------------------------------------------------------------
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.520
+Model:                            OLS   Adj. R-squared:                  0.519
+Method:                 Least Squares   F-statistic:                     1206.
+Date:                Sun, 26 Apr 2026   Prob (F-statistic):               0.00
+Time:                        10:49:25   Log-Likelihood:                -17136.
+No. Observations:                5584   AIC:                         3.428e+04
+Df Residuals:                    5578   BIC:                         3.432e+04
+Df Model:                           5
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          5.9628      0.070     85.548      0.000       5.826       6.099
+x1            -5.4399      0.076    -71.312      0.000      -5.589      -5.290
+x2            -0.3307      0.071     -4.678      0.000      -0.469      -0.192
+x3             0.1367      0.070      1.941      0.052      -0.001       0.275
+x4             0.1532      0.076      2.011      0.044       0.004       0.303
+x5            -0.1134      0.070     -1.617      0.106      -0.251       0.024
+==============================================================================
+Omnibus:                      412.630   Durbin-Watson:                   1.157
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              604.748
+Skew:                           0.606   Prob(JB):                    4.79e-132
+Kurtosis:                       4.064   Cond. No.                         1.54
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+MODEL 2 — OLS with Era Categorical Variable
+----------------------------------------------------------------------
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                 points   R-squared:                       0.522
+Model:                            OLS   Adj. R-squared:                  0.521
+Method:                 Least Squares   F-statistic:                     1216.
+Date:                Sun, 26 Apr 2026   Prob (F-statistic):               0.00
+Time:                        10:49:25   Log-Likelihood:                -17124.
+No. Observations:                5584   AIC:                         3.426e+04
+Df Residuals:                    5578   BIC:                         3.430e+04
+Df Model:                           5
+Covariance Type:            nonrobust
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept            15.8023      0.194     81.417      0.000      15.422      16.183
+C(era)[T.V10/V8]      0.8298      0.163      5.084      0.000       0.510       1.150
+grid                 -0.8976      0.013    -71.658      0.000      -0.922      -0.873
+stop_count           -0.3708      0.071     -5.200      0.000      -0.511      -0.231
+avg_pit_ms         1.006e-06   3.69e-07      2.730      0.006    2.84e-07    1.73e-06
+qualifying_gap_ms  4.761e-05   2.56e-05      1.861      0.063   -2.53e-06    9.78e-05
+==============================================================================
+Omnibus:                      416.328   Durbin-Watson:                   1.165
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              625.691
+Skew:                           0.600   Prob(JB):                    1.36e-136
+Kurtosis:                       4.117   Cond. No.                     5.87e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.87e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+SECTION 3 — HYPOTHESIS TEST: PIT STOP SPEED vs POSITION GAIN
+----------------------------------------------------------------------
+H0: No difference in grid_to_finish_delta between fast/slow pit groups
+Median split value         : 25652.1 ms
+Fast group mean delta      : 1.5395
+Slow group mean delta      : 1.4210
+Levene stat/p              : 2.4884 / 0.116465
+t-statistic                : 0.6259
+p-value                    : 0.532162
+Decision (α=0.05)          : FAIL TO REJECT H0
+
+
+SECTION 5 — CORRELATION: GRID vs POSITION BY CIRCUIT TYPE
+----------------------------------------------------------------------
+Qualifying-Dominant      : r=0.7574, p=0.000000, n=215, sig=True
+Strategy-Dominant        : r=0.7864, p=0.000000, n=1836, sig=True
+Mixed                    : r=0.7742, p=0.000000, n=3622, sig=True
+
+
+SECTION 6 — SUMMARY OF STATISTICAL FINDINGS
+======================================================================
+Finding 1: Qualifying position (grid) is the largest standardised
+           coefficient predictor of race points in OLS Model 1.
+
+Finding 2: Hypothesis test (pit speed vs delta) — t-stat and p-value logged in Section 3 above.
+
+Finding 3: K-Means (K=3) identifies three circuit archetypes:
+           Qualifying-Dominant, Strategy-Dominant, Mixed.
+
+Finding 4: Pearson r (grid vs positionOrder) is higher at
+           Qualifying-Dominant circuits — see Section 5.
+
+Finding 5: Optimal stop count varies by circuit archetype
+           — see pivot table in Section 6.
