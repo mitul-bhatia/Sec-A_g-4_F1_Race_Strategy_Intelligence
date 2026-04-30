@@ -14,7 +14,7 @@ This folder contains the personal DVA (Data & Visual Analytics) portfolio assets
 | **Kushal Sarkar** | Data Analyst | [Kushal Portfolio](https://kushal425.github.io/dva_portfolio/) |
 | **Ramani Dhruv D.** | Data Engineer | [Dhruv Portfolio](https://dhruvr-16.github.io/dva-portfolio/) |
 | **Harsha Karthikeya** | Analyst | [Harsha Portfolio](https://harshakarthikeya1510.github.io/PORTFOLIO_DVA/) |
-| **Vetriselvan R** | Visualization Specialist | *Not Provided* |
+| **Vetriselvan R** | Visualization Specialist | [Vetriselvan Portfolio](https://vetriselvan-1.github.io/DVA-Portflio/) |
 
 
 ---
