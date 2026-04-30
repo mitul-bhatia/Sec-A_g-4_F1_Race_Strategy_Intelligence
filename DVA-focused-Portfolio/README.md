@@ -9,18 +9,19 @@ This folder contains the personal DVA (Data & Visual Analytics) portfolio assets
 | Member | Role | Portfolio |
 | :--- | :--- | :--- |
 | **Ritik Ranjan** | Strategy Lead | [Ritik Portfolio](https://ritik-beep.github.io/Ritik-DVA/) |
-| **Mitul Bhatia** | Project Lead | [Mitul Portfolio](./Mitul_index.html) |
-| **Agrim K. Malhotra** | Data Analyst | [Agrim Portfolio](https://agrim-2007.github.io/Data-Analytics-Dashbaord/) |
-| **Kushal Sarkar** | Data Analyst | [Kushal Portfolio](https://kushal425.github.io/dva_portfolio/) |
-| **Ramani Dhruv D.** | Data Engineer | [Dhruv Portfolio](https://dhruvr-16.github.io/dva-portfolio/) |
-| **Harsha Karthikeya** | Analyst | [Harsha Portfolio](https://harshakarthikeya1510.github.io/PORTFOLIO_DVA/) |
-| **Vetriselvan R** | Visualization Specialist | [Vetriselvan Portfolio](https://vetriselvan-1.github.io/DVA-Portflio/) |
+| **Mitul Bhatia** | Project Lead | [Mitul's Portfolio](./Mitul_index.html) |
+| **Vetriselvan R** | ETL Lead | [Vetriselvan's Portfolio](https://vetri-78640.github.io/Portfolio/) |
+| **Agrim K. Malhotra** | Data Analyst | [Agrim's Portfolio](https://agrim-2007.github.io/Data-Analytics-Dashbaord/) |
+| **Kushal Sarkar** | Data Analyst | [Kushal's Portfolio](https://kushal425.github.io/dva_portfolio/) |
+| **Ramani Dhruv D.** | Data Engineer | [Dhruv's Portfolio](https://dhruvr-16.github.io/dva-portfolio/) |
+| **Harsha Karthikeya** | Analyst | [Harsha's Portfolio](https://harshakarthikeya1510.github.io/PORTFOLIO_DVA/) |
+
 
 
 ---
 
 
-## 🚀 Notes
+##  Notes
 
 - Each portfolio showcases individual contributions to the DVA project.
 - The project includes:
@@ -32,6 +33,6 @@ This folder contains the personal DVA (Data & Visual Analytics) portfolio assets
 
 ---
 
-## 🔥 Goal
+##  Goal
 
 This portfolio set reflects **end-to-end ownership of a real-world data analytics pipeline**, from raw data to insights and storytelling.
